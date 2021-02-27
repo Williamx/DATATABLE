@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8">
+	<title>Titulo do texto</title>
+
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script> 
+	<script type="text/javascript" class="init">
+		$(document).ready(function() {
+	$('#example').DataTable(); 
+} );
+	</script>
+</head>
+
+<body>
+	<div class="container" style="font-family:Arial;">
+     <div class="row">
+      <div class="col-9">
+           <div class="jumbotron">
+    <h1>Bootstrap Tutorial</h1>
+    <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing
+    responsive, mobile-first projects on the web.</p>
+    <input style="" type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off" value="+ Alugar Equipamento">
+  </div>
+
+      </div>
+  
+  <div class="col-8" >
+		<table id="example" class="display" style="width:100%">
+			<thead>
+				<tr>
+					<th>id</th>
+					<th>Produto</th>
+					<th>PeriodoInicio</th>
+					<th>PeriodoFim.</th>
+					<th>Empresa</th>
+					<th>Valor</th>
+					<th>acao</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>01</td>
+					<td>monitor</td>
+					<td>12/12/2021</td>
+					<td>13/12/2021</td>
+					<td>Escola</td>
+					<td>$320,800</td>
+					<td><div id="divdir" style="padding:1px;width:250px;">
+            <input style="margin-right:10px;" type="button" value="Alterar"> |
+            <input style="width:100px;margin-left:10px;"type="button" value="Excluir"></div>
+          </td>
+				</tr>
+				<tr>
+					<td>02</td>
+					<td>caixa de som</td>
+					<td>12/12/2021</td>
+					<td>13/12/2021</td>
+					<td>Escola</td>
+					<td>$320,801</td>
+					<td><div id="divdir" style="padding:1px;width:250px;">
+            <input style="margin-right:10px;" type="button" value="Alterar"> |
+            <input style="width:100px;margin-left:10px;"type="button" value="Excluir"></div>
+          </td>
+
+				</tr>
+
+			</tbody>
+			<tfoot>
+				<tr>
+					<th>id</th>
+					<th>Produto</th>
+					<th>PeriodoInicio</th>
+					<th>PeriodoFim.</th>
+					<th>Empresa</th>
+					<th>Valor</th>
+					<th>acao</th>
+				</tr>
+			</tfoot>
+	  	</table>
+     </div>
+
+    </div>
+	</div>
+</body>
+</hmtl>
