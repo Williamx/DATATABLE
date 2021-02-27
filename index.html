@@ -13,7 +13,19 @@
 	<script type="text/javascript" src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script> 
 	<script type="text/javascript" class="init">
 		$(document).ready(function() {
-	$('#example').DataTable(); 
+	$('#example').DataTable({
+     language: {
+        search: "Buscar :",
+        "lengthMenu":     "Mostrar_MENU_ produtos alugados",
+        "infoEmpty":      "Mostrando 0 a 0 de 0 alugados",
+         "paginate": {
+        "first":      "First",
+        "last":       "Last",
+        "next":       "proximo",
+        "previous":   "anterior"
+    },
+    }}
+  ); 
 } );
 	</script>
 </head>
